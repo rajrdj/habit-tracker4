@@ -1,36 +1,55 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+# Habit Tracker
+
+hosted url 
+[Link to habit tracker ](https://habit-tracker4.vercel.app/)
+
+A full-stack habit tracking application built with Next.js, MongoDB, and D3.js. This application allows users to create, track, and visualize their daily habits.
+
+## Features
+
+- **Create Habits**: Users can add new habits they want to track.
+- **Track Daily Progress**: Mark habits as 'Done', 'Not Done', or 'None' for each day.
+- **7-Day View**: See and update the status of each habit for the last 7 days.
+- **Data Visualization**: Utilizes D3.js to create interactive charts showing habit completion over time.
+- **Streak Tracking**: Keeps track of the current streak and total completions for each habit.
+- **Delete Habits**: Remove habits that are no longer needed.
+- **Dark Mode**: Toggle between light and dark themes for comfortable viewing in any environment.
+- **Responsive Design**: Works seamlessly on desktop and mobile devices.
+
+## Tech Stack
+
+- **Frontend**: Next.js with React
+- **Backend**: Next.js API Routes
+- **Database**: MongoDB
+- **Styling**: Tailwind CSS with Shadcn UI components
+- **Data Visualization**: D3.js
+- **Deployment**: Vercel
 
 ## Getting Started
 
-First, run the development server:
+1. Clone the repository:
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
+2.  Install dependencies:
+3.  cd habit-tracker
+npm install
+3. Set up environment variables:
+Create a `.env.local` file in the root directory and add your MongoDB URI:
+MONGODB_URI=your_mongodb_uri_here
+4. Run the development server:
+5. npm run dev
+Copy
+5. Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+## Deployment
 
-You can start editing the page by modifying `app/page.js`. The page auto-updates as you edit the file.
+This project is set up for easy deployment on Vercel. Simply connect your GitHub repository to Vercel and it will automatically deploy your application.
 
-This project uses [`next/font`](https://nextjs.org/docs/basic-features/font-optimization) to automatically optimize and load Inter, a custom Google Font.
+Remember to add your `MONGODB_URI` as an environment variable in your Vercel project settings.
 
-## Learn More
+## Contributing
 
-To learn more about Next.js, take a look at the following resources:
+Contributions are welcome! Please feel free to submit a Pull Request.
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+## License
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
-
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
+This project is licensed under the MIT License.
